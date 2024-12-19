@@ -1,7 +1,7 @@
 # Chaotic Ruby  
 **20 Essential Ruby Snippets for Hackers**  
 
-Chaotic Ruby is a collection of 20 practical Ruby snippets designed for hackers, security enthusiasts, and system administrators. This book focuses on simplicity and minimalism, showcasing how to solve real-world problems without over-engineering or relying on external libraries.  
+Chaotic Ruby is a collection of 20 practical Ruby snippets designed for hackers, security enthusiasts, and system administrators. This book focuses on simplicity and minimalism, showcasing how to solve real-world problems without over-engineering or relying on external libraries. I plan on updating this book and making it bigger over the time, with new snippets and ideas.
 
 ## What’s Inside?  
 Each snippet includes:  
@@ -16,8 +16,8 @@ Ruby's elegance and versatility make it a powerful tool for security operations,
 
 ## Download
 This is a **free ebook**. You can get it from:
-- [Amazon Books](https://amazon.com)
-- Or directly from [BCA LTD](https://bca.ltd/ChaoticRuby)
+- [Apple Books](http://books.apple.com/us/book/id6739544400)
+- Or directly from BCA LTD in [PDF](https://bca.ltd/ChaoticRubyPDF) format or [EPUB](https://bca.ltd/ChaoticRubyEPUB).
 
 ---
 
